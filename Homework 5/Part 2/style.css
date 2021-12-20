@@ -1,0 +1,52 @@
+html{
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after{
+    box-sizing: inherit;
+}
+
+.holder{
+    width:550px;
+    height:150px;
+    border:3px solid black;
+    border-radius: 20px  20px 0 0;
+    display:flex;
+    flex-wrap: wrap;
+    overflow:hidden;
+}
+
+.holder :nth-child(1){
+    background-color: tomato;
+    order:1;
+    flex-basis: 50%; 
+}
+.holder :nth-child(2){
+    background-color:rgb(130, 130, 207) ;
+    order:4;
+    flex-basis: 33.33%;
+}
+.holder :nth-child(3){
+    background-color: blueviolet;
+    order:3;
+    flex-basis: 33.33%;
+}
+.holder :nth-child(4){
+    background-color: green;
+    order:5;
+    flex-basis:33.33%;
+}
+.holder :nth-child(5){
+    background-color: orange;
+    order:2;
+    flex-basis:50%;
+}
+
+.item{
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   font-size:20px;
+}
